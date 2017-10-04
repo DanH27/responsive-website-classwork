@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.mono {
+  font-family: 'Roboto Mono', monospace;
+}
+.copy {
+  font-family: 'Georgia', serif;
+}
+/*Header */
+.site-header {
+  background-color: #03151c;
+  height: 76px;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 25px 20px;
+}
+.nav-link {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  color: #14e9b6;
+  text-decoration: none;
+}
+.header-nav {
+  display: inline-block;
+  float: right;
+
+}
+.logo {
+  display: inline;
+  float: left;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+.nav-links span {
+  color: #14e9b6;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/hero.jpg');
+  height: 480px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-heading, .subheading {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  display: flex;
+}
+.hero-heading {
+  font-weight: bold;
+  font-size: 42px;
+  padding-top: 15px;
+}
+.subheading {
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.the-bod {
+  background-color: #14e9b6;
+}
+.the-abs {
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0px 150px;
+}
+.the-abs .content-header,
+.the-abs .mono,
+.the-abs .copy {
+  display: flex;
+
+}
+.flex-row {
+  display: flex;
+}
+.content-header {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #021d2c;
+  font-weight: bold;
+  font-size: 27px;
+}
+.mono {
+  font-family: 'Roboto Condensed', monospace;
+  font-weight: 10px;
+  color: #021d2c;
+  line-height: 1.5;
+}
+.copy {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #021d2c;
+}
+.the-abs .content-header {
+  margin: 15px 0;
+}
+.the-abs .mono {
+  margin: 15px 0;
+}
+.flex-row .copy{
+  margin: 15px 30px;
+}
+.flex-row .copy:first-of-type {
+	margin-left: 0;
+}
+.sidebar {
+	background: rgba(20,233,183,1);
+	background: -moz-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: linear-gradient(135deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	display: inline-block;
+	width: 30%;
+	padding: 95px 40px 100px 60px;
+	vertical-align: top;
+}
+.objectives li {
+	list-style-type: initial;
+	margin: 15px 15px 15px 0;
+}
+.objectives {
+	margin-left: 15px;
+}
+.sidebar p.mono {
+	margin: 20px 0 25px;
+}
+.thirds {
+	margin-top: 5px;
+}
+.schedule  {
+	display: inline-block;
+	width: 50%;
+	padding: 90px 70px 80px;
+
+}
+.schedule .content-header {
+	margin: 20px 0 15px;
+}
+
+.small-header {
+	font-size: 21px;
+}
+
+.schedule .small-header {
+	margin: 40px 0 15px;
+}
+.schedule-block {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+.schedule-block .mono {
+	text-decoration-color: none;
+}
+.schedule-block .mono:hover {
+	text-decoration: underline;
+	color: #14b9b6;
+}
+.schedule-block span {
+	margin: 0 15px;
+}
+
+/*Current Students */
+.current-students .mono {
+	width: 40%;
+}
+.img-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.img-flex img{
+	display: flex;
+	width: 320px;
+	height: 320px;
+	margin: 5px;
+}
+/* footer */
+.gradient-bar {
+	width: 100%;
+	height: 5px;
+	background: rgba(20,233,183,1);
+	background: -moz-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+	background: linear-gradient(135deg, rgba(20,233,183,1) 0%, rgba(10,216,227,1) 100%);
+}
+footer {
+	width: 90%;
+	margin: 0 auto;
+}
+footer .nav-links {
+	text-align: right;
+}
+footer .nav-link:hover {
+	color: #14e9b6;
+}
+footer nav-link {
+	color: red;
+}
+.footer-copy {
+	text-align: right;
+	margin: 15px 0 10px;
+	font-size: 14px;
+
+}
+/* For smaller screens */
